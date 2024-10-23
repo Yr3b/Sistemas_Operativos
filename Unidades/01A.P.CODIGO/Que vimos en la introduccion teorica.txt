@@ -1,0 +1,36 @@
+Que es un Proceso?
+
+Un proceso es una instancia de un programa informatico que se esta ejecutando. 
+Todo proceso tiene 3 componenetes basicos:
+1. Un programa ejecutable
+2. Los datos asociados que nececesita el programa (variables, espacio de trabajo, 
+buffers,etc)
+3. El contexto de ejecucion del programa (Estado del proceso)
+
+Que es el Multiprocesamiento?
+
+El Multiprocesamiento se refiere a la capacidad de un sistema de admitir mas de una
+ejecucion de un proceso el mismo tiempo.
+Las aplicaciones en un sistema de Multiprocesamiento se dividen en rutinas mas pequeñas
+que se ejecutan de forma independiente.
+El sistema operativo asigna estos subprocesos a los procesadores, lo que mejora el
+rendimiento del sistema.
+
+Que es un thread? 
+
+Un thread o en español un hilo, es una entidad dentro de un procesos que se puede 
+programar para su ejecucion.
+Es la unidad de procesamiento mas pequeña que se puede realizar en un sistema operativo.
+
+Un hilo contiene toda esta informacion en un bloque de control de hilo (TCB)
+
+- Identificador de hilo: se asigna un identificador unico (TID) a cada hilo nuevo.
+- Puntero de pila: apunta a la pila del subproceso en el proceso. La pila contiene
+                   las variables locales que se encuentran dentro del alcance del 
+                   subproceso.
+- Contador de programa: Un registo que almacena la direccion de la instruccion que 
+                        actualmente esta siendo ejecutada por un hilo.
+- Estado del hilo: Puede estar en ejecucion, listo, en espera, iniciando o terminando.
+- Conjunto de registros del hilo: Registros asignados al hilo para realizar calculos.
+- Puntero de proceso padre: Un puntero al bloque de control de proceso del proceso en
+                            el que reside el hilo.
